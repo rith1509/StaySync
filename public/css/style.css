@@ -1,0 +1,368 @@
+/* General Body and Footer Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar Styles */
+.navbar-brand i {
+    color: #ff5a5f;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.nav-link:hover {
+    color: #ff5a5f !important;
+}
+
+/* Show Page Styles */
+.show-img {
+    height: 30vh;
+    width: 60%;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding: 0;
+}
+
+/* Index Page (Listing Card) Styles */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+.card{
+        border-radius: 1rem !important;
+        
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.card-img-overlay {
+    opacity: 0;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* New/Edit Form Buttons */
+.add-btn, .edit-btn {
+    background-color: #ff5a5f !important;
+    border: none !important;
+}
+
+/* Footer Styles */
+.f-info {
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.f-info-socials, .f-info-links, .f-info-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-info-socials i {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222;
+    margin: 0 0.5rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #ebebeb;
+}
+/* ... existing styles ... */
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+/* === SHOW PAGE STYLES (THE FIX) === */
+
+/* The card itself is now constrained and centered */
+.show-card {
+  padding: 0;
+  border: none;
+  max-width: 75%; /* You can adjust this percentage */
+  margin: 2rem auto; /* This centers the card */
+}
+
+/* The image now fills its smaller container (the card) perfectly */
+.show-img {
+  border-radius: 1rem;
+  width: 100%; /* Image takes 100% width of the .show-card */
+  height: auto; /* Height adjusts automatically to prevent stretching */
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.show-card {
+    padding: 0;
+    border: none;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* Add these styles to your main CSS file */
+
+/* Navbar Brand Styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Adds space between the icon and text */
+}
+
+.navbar-brand p {
+  margin: 0; /* Removes default paragraph margin */
+  font-weight: 600;
+  color: #ff385c; /* Airbnb brand color */
+}
+
+.navbar-brand i {
+  color: #ff385c;
+  font-size: 2rem;
+}
+
+/* Search Bar Styling */
+.search-input {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+}
+
+.search-btn {
+  background-color: #ff385c;
+  color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.search-btn:hover {
+  background-color: #d90532;
+  color: white;
+}
+
+.search-btn i {
+  margin-right: 0.5rem;
+}
+
+/* General Navbar Layout */
+.navbar-nav a {
+  font-size: 0.9rem;
+}
+
+/* Add these styles to the end of your style.css file */
+
+/* Main container for the filters */
+.filter-bar {
+    display: flex;
+    flex-wrap: nowrap; /* Prevents wrapping to a new line */
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+    overflow-x: auto; /* Allows horizontal scrolling on small screens */
+}
+
+/* Individual filter item */
+.filter-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    opacity: 0.7;
+    text-decoration: none;
+    color: #222;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.filter-option:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05); /* Slightly enlarges the item on hover */
+    color: #000;
+}
+
+/* Style for the icons */
+.filter-option i {
+    font-size: 1.5rem;
+}
+
+/* Style for the text labels */
+.filter-option p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+/* Add these styles to the end of your style.css file */
+
+/* Update Filter Bar layout */
+/* Main container for the filters */
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Adds space between the icon list and the toggle */
+    flex-wrap: nowrap;
+}
+
+/* Container for the scrolling icons */
+.filter-options {
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    gap: 1.5rem;
+    flex-grow: 1; /* Allows this section to take available space */
+}
+
+/* Hide scrollbar for a cleaner look */
+.filter-options::-webkit-scrollbar {
+    display: none;
+}
+
+/* Style the tax toggle switch in its new position */
+.tax-toggle {
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.tax-toggle .form-check-input {
+    width: 3em;
+    height: 1.5em;
+    margin-top: 0;
+}
+
+.tax-toggle label {
+    margin-left: 0.5rem;
+}
+
+/* Add these styles to your style.css file */
+
+/* Main Navbar Layout */
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand span {
+    font-weight: 600;
+    color: #ff385c;
+    margin-left: 0.5rem;
+}
+
+/* New Search Bar Styles */
+.search-bar {
+    border: 1px solid #ddd;
+    border-radius: 40px;
+    padding: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s ease;
+}
+
+.search-bar:hover {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
+}
+
+.search-bar .search-input {
+    border: none;
+    background-color: transparent;
+    box-shadow: none; /* Override Bootstrap focus shadow */
+    width: 250px; /* Adjust width as needed */
+}
+
+.search-bar .search-input:focus {
+    outline: none;
+}
+
+.search-bar .search-btn {
+    background-color: #ff385c;
+    color: white;
+    border-radius: 50%; /* Make it circular */
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar .search-btn:hover {
+    background-color: #d90532;
+    color: white;
+}
